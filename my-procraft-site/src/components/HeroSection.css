@@ -1,0 +1,30 @@
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+  
+  .order-button {
+    padding: 15px 30px;
+    background-color: #00bfa6;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+  }
+  

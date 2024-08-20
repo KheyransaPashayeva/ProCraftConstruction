@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #282c34;
+    color: white;
+  }
+  
+  .header .logo {
+    font-size: 1.5em;
+  }
+  
+  .header nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .header nav .order-btn {
+    padding: 10px 20px;
+    background-color: #00bfa6;
+    border-radius: 20px;
+    color: white;
+  }
+  

@@ -1,0 +1,28 @@
+.services {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .services h2 {
+    margin-bottom: 20px;
+    color: #008080;
+  }
+  
+  .services-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .service-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 25%;
+  }
+  
+  .service-item h3 {
+    color: #008080;
+  }
+  
