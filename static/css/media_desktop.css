@@ -1,0 +1,177 @@
+@media only screen and (min-width: 1024px) {
+
+  .mainSection {
+    position: relative;
+    min-height: 49.03vw;
+    background: 
+      linear-gradient(180deg, rgba(15, 24, 57, 0.62) 0%, rgba(30, 30, 30, 0.62) 100%), 
+      url('./../assets/img/dashboard.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 -9.03vw;
+    padding: 0 9.03vw;
+  }
+
+  .topNavbar {
+    position: relative;
+    top: 4.24vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.68vw;
+    background-color: #11121961;
+    margin: 0 -9.03vw;
+    padding: 0 9.03vw;
+  }
+
+  .logoHolder {
+    width: 4.1vw;
+    height: 4.65vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .logo {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .linksHolder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2.78vw;
+    white-space: nowrap;
+  }
+
+  .link {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.11vw;
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 0.56vw;
+  }
+
+  .active {
+    color: #2BCDBA;
+  }
+
+  .buttonHolder {
+    margin-left: auto;
+  }
+
+  .button {
+    font-family: "Inika";
+    font-weight: 500;
+    font-size: 1.11vw;
+    border: transparent;
+    border-radius: 1.11vw;
+    background-color: #229F90;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 1.04vw 3.89vw;
+  }
+
+  .dashboardHolder {
+    position: relative;
+    top: 11.62vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2.14vw;
+  }
+
+  .dashboardTitle {
+    width: 54.31vw;
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 4.86vw;
+    color: #FFFFFF;
+  }
+
+  .fontWeightBold {
+    font-weight: 700 !important;
+  }
+
+  .dashboardText {
+    width: 47.36vw;
+    line-height: 1.51vw;
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.25vw;
+    color: #FFFFFF;
+  }
+
+  .dashboardButton {
+    width: fit-content !important;
+    padding: 1.04vw 9.1vw !important;
+  }
+
+  .moreSection {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 1.67vw;
+    background-color: #ffffff;
+    margin-top: 7.15vw;
+  }
+
+  .moreLeftSide {
+    display: flex;
+    flex-direction: column;
+    gap: 1.39vw;
+  }
+
+  .moreRightSide {
+    min-width: 33.06vw;
+    height: 24.72vw;
+    border-radius: 2.39vw;
+    overflow: hidden;
+  }
+
+  .moreTitle {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 2.78vw;
+    color: #131418;
+  }
+
+  .greenTextColor {
+    font-weight: 700 !important;
+    color: #229F90 !important;
+  }
+
+  .moreText {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.11vw;
+    color: #131418;
+  }
+
+  .moreButton {
+    width: fit-content;
+    border: 1px solid #229F90 !important;
+    background-color: #FFFFFF !important;
+    color: #229F90 !important;
+    padding: 1.04vw 4.65vw !important;
+  }
+
+  .image {
+    min-width: 100%;
+    height: 100%;
+  }
+
+  .greenLayer {
+    position: absolute;
+    bottom: 0;
+    min-width: inherit;
+    height: 14.17vw;
+    background-color: #229F902E;
+    border-radius: 2.36vw;
+    z-index: 100;
+  }
+}

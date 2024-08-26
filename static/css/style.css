@@ -1,0 +1,51 @@
+@import "media_mobile.css";
+@import "media_tablet.css";
+@import "media_desktop.css";
+
+@font-face {
+  font-family: Inika;
+  src: url('./../assets/fonts/Inika-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: Inika;
+  src: url('./../assets/fonts/Inika-Bold.ttf');
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inika";
+  font-size: 16px;
+  height: auto;
+  position: relative;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #FFFFFF;
+}
+
+.noScroll {
+  overflow: hidden !important;
+}
+
+input[type="button"],
+input[type="submit"],
+button {
+  border: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+
+  body {
+    padding: 0 9.03vw;
+  }
+}
