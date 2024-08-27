@@ -9,6 +9,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    animation: growBackground 25s infinite;
     margin: 0 -9.03vw;
     padding: 0 9.03vw;
   }
@@ -83,6 +84,8 @@
     display: flex;
     flex-direction: column;
     gap: 2.14vw;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 1s forwards, moveLeft 0.5s ease-in 1s forwards;
   }
 
   .dashboardTitle {
@@ -108,6 +111,9 @@
 
   .dashboardButton {
     width: fit-content !important;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 1.5s;
     padding: 1.04vw 9.1vw !important;
   }
 
@@ -128,10 +134,19 @@
   }
 
   .moreRightSide {
+    position: relative;
     min-width: 33.06vw;
     height: 24.72vw;
     border-radius: 2.39vw;
     overflow: hidden;
+  }
+
+  .moveLeftAnimation {
+    animation: moveLeft 0.5s ease-out forwards;
+  }
+
+  .moveUpAnimation {
+    animation: moveUp 1s ease-out forwards;
   }
 
   .moreTitle {
@@ -139,6 +154,9 @@
     font-weight: 400;
     font-size: 2.78vw;
     color: #131418;
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in forwards;
+    animation-delay: 0.3s;
   }
 
   .greenTextColor {
@@ -151,6 +169,9 @@
     font-weight: 400;
     font-size: 1.11vw;
     color: #131418;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 0.5s;
   }
 
   .moreButton {
@@ -158,12 +179,18 @@
     border: 1px solid #229F90 !important;
     background-color: #FFFFFF !important;
     color: #229F90 !important;
+    opacity: 0;
+    animation: fadeIn 1.2s ease-in forwards;
+    animation-delay: 0.7s;
     padding: 1.04vw 4.65vw !important;
   }
 
   .image {
     min-width: 100%;
     height: 100%;
+    transform: scale(1.2);
+    animation: shrinkBackground 5s forwards;
+    animation-delay: 0.3s;
   }
 
   .greenLayer {
@@ -214,7 +241,24 @@
     border: 1px solid #E7E6E6;
     border-radius: 1.11vw;
     background-color: #FFFFFF;
+    transform: translateY(4vw);
     padding: 1.67vw 1.39vw;
+  }
+
+  .cardHolder:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  .cardHolder:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .cardHolder:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  .cardHolder:nth-child(4) {
+    animation-delay: 0.6s;
   }
 
   .iconHolder {
@@ -250,6 +294,8 @@
     gap: 0.35vw;
     width: 100%;
     border-radius: 0.83vw !important;
+    opacity: 1;
+    animation: none !important;
     margin-top: auto !important;
     padding-top: 0.78vw !important;
     padding-bottom: 0.78vw !important;
@@ -258,6 +304,12 @@
   .provideServicesButton img {
     width: 1.39vw;
     height: 1.39vw;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+
+  .provideServicesButton:hover img {
+    transform: rotateX(360deg);
   }
 
   .constructionSection {
@@ -299,13 +351,13 @@
     overflow: hidden;
   }
 
-  .constructionImagesHolder .leftSide img {
+  .constructionImagesHolder .leftSide a img {
     display: block;
     width: 100%;
     height: auto;
   }
 
-  .constructionImagesHolder .leftSide .overlay {
+  .constructionImagesHolder .leftSide a .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -314,6 +366,29 @@
     background-color: #16182699;
     z-index: 1;
     pointer-events: none;
+  }
+
+  .constructionImagesHolder .leftSide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('./../assets/img/image_2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: transform 0.8s ease;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .constructionImagesHolder .leftSide:hover::before {
+    transform: scale(1.1);
+  }
+
+  .constructionImagesHolder .leftSide:hover a img {
+    transition: transform 0.8s ease;
   }
 
   .constructionImagesHolder .rightSide {
@@ -336,13 +411,13 @@
     overflow: hidden;
   }
 
-  .constructionImagesHolder .rightSide .columns .topImageHolder img {
+  .constructionImagesHolder .rightSide .columns .topImageHolder a img {
     display: block;
     width: 100%;
     height: auto;
   }
 
-  .constructionImagesHolder .rightSide .columns .topImageHolder .overlay {
+  .constructionImagesHolder .rightSide .columns .topImageHolder a .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -353,6 +428,47 @@
     pointer-events: none;
   }
 
+  .constructionImagesHolder .rightSide .columns .topImageHolder::before,
+  .constructionImagesHolder .rightSide .columns .bottomImageHolder::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    transition: transform 0.8s ease;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .constructionImagesHolder .rightSide .columns .first::before {
+    background-image: url('./../assets/img/image_3.jpg');
+  }
+
+  .constructionImagesHolder .rightSide .columns .second::before {
+    background-image: url('./../assets/img/image_4.jpg');
+  }
+
+  .constructionImagesHolder .rightSide .columns .third::before {
+    background-image: url('./../assets/img/image_5.jpg');
+  }
+
+  .constructionImagesHolder .rightSide .columns .fourth::before {
+    background-image: url('./../assets/img/image_6.jpg');
+  }
+
+  .constructionImagesHolder .rightSide .columns .topImageHolder:hover::before,
+  .constructionImagesHolder .rightSide .columns .bottomImageHolder:hover::before {
+    transform: scale(1.1);
+  }
+
+  .constructionImagesHolder .rightSide .columns .topImageHolder:hover a img,
+  .constructionImagesHolder .rightSide .columns .bottomImageHolder:hover a img {
+    transition: transform 0.8s ease;
+  }
+
   .constructionImagesHolder .rightSide .columns .bottomImageHolder {
     position: relative;
     display: inline-block;
@@ -361,13 +477,13 @@
     overflow: hidden;
   }
 
-  .constructionImagesHolder .rightSide .columns .bottomImageHolder img {
+  .constructionImagesHolder .rightSide .columns .bottomImageHolder a img {
     display: block;
     width: 100%;
     height: auto;
   }
 
-  .constructionImagesHolder .rightSide .columns .bottomImageHolder .overlay {
+  .constructionImagesHolder .rightSide .columns .bottomImageHolder a .overlay {
     position: absolute;
     top: 0;
     left: 0;
