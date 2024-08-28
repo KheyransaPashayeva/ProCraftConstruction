@@ -26,6 +26,10 @@
     padding: 0 9.03vw;
   }
 
+  .noColorNavbar {
+    background-color: transparent !important;
+  }
+
   .logoHolder {
     width: 4.1vw;
     height: 4.65vw;
@@ -48,6 +52,10 @@
     white-space: nowrap;
   }
 
+  .linksHolder .dark {
+    color: #696969;
+  }
+
   .link {
     font-family: "Inika";
     font-weight: 400;
@@ -59,7 +67,7 @@
   }
 
   .active {
-    color: #2BCDBA;
+    color: #2BCDBA !important;
   }
 
   .buttonHolder {
@@ -227,6 +235,7 @@
     color: #131418;
   }
 
+  .otherServicesSection .container,
   .provideServicesCardContainer {
     display: flex;
     flex-direction: row;
@@ -492,5 +501,138 @@
     background-color: #16182699;
     z-index: 1;
     pointer-events: none;
+  }
+
+  .servicesTopSection {
+    width: 100%;
+    margin-bottom: calc(4.24vw + 2.78vw);
+  }
+
+  .servicesInfoHolder {
+    position: relative;
+    top: 4.24vw;
+    margin-top: 3.47vw;
+  }
+
+  .servicesInfoHolder h1 {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 2.08vw;
+    color: #131418;
+    margin-bottom: 0.69vw;
+  }
+
+  .servicesInfoHolder p {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.11vw;
+    color: #131418;
+  }
+
+  .servicesListSection {
+    position: relative;
+    width: 100%;
+    height: 43.96vw;
+    margin: 0 -9.03vw;
+    padding: 0 9.03vw;
+  }
+
+  .servicesListSection .container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+
+  .servicesListSection .container .leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25vw;
+    width: 25.21vw;
+    height: inherit;
+    background: linear-gradient(180deg, rgba(90, 74, 40, 0.5) 0%, rgba(51, 40, 9, 0.5) 100%);
+    z-index: 10;
+    padding: 0 0.97vw;
+  }
+
+  .servicesListSection .container .leftSide h2 {
+    font-family: "Inika";
+    font-weight: 700;
+    font-size: 1.39vw;
+    color: #E1C532;
+  }
+
+  .servicesListSection .container .leftSide ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2.15vw;
+  }
+
+  .servicesListSection .container .leftSide ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1vw;
+    list-style-type: none;
+  }
+
+  .container .leftSide ul li img {
+    position: relative;
+    width: 1.53vw;
+    height: 1.53vw;
+  }
+
+  .container .leftSide ul li p {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.38vw;
+    color: #FFFFFF;
+  }
+
+  .servicesListSection .container .rightSide {
+    width: 71.27vw;
+    height: 100%;
+    overflow: hidden;
+    margin-right: -9.03vw;
+  }
+
+  .servicesListSection .container .rightSide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .servicesListSection .container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4C3B0DA3;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .otherServicesSection {
+    position: relative;
+    height: 100%;
+    background-color: #FFFFFF;
+    margin: 0 -9.03vw;
+    padding: 2.78vw 9.03vw 6.11vw 9.03vw;
+  }
+
+  .otherServicesSection .titleHolder {
+    margin-bottom: 2.78vw;
+  }
+
+  .otherServicesSection .titleHolder h2 {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 2.08vw;
+    color: #131418;
+  }
+
+  .otherServicesSection .container .cardHolder {
+    transform: translateY(0);
   }
 }
