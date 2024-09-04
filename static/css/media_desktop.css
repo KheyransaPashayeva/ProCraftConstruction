@@ -541,31 +541,69 @@
     display: flex;
     flex-direction: row;
     height: 100%;
+    margin-left: -9.03vw;
   }
 
   .servicesListSection .container .leftSide {
+    position: absolute;
+    left: 9.03vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1.25vw;
     width: 25.21vw;
     height: inherit;
-    background: linear-gradient(180deg, rgba(90, 74, 40, 0.5) 0%, rgba(51, 40, 9, 0.5) 100%);
     z-index: 10;
     padding: 0 0.97vw;
+  }
+
+  .engineering .container .leftSide {
+    background-color: #5E8BA242;
+  }
+
+  .management .container .leftSide {
+    background-color: #636A6996;
+  }
+
+  .construction .container .leftSide {
+    background-color: #5560774A;
+    left: auto;
+    right: 9.03vw;
   }
 
   .servicesListSection .container .leftSide h2 {
     font-family: "Inika";
     font-weight: 700;
     font-size: 1.39vw;
+  }
+
+  .engineering .container .leftSide h2 {
     color: #E1C532;
+  }
+
+  .management .container .leftSide h2 {
+    color: #C1CDFF;
+  }
+
+  .construction .container .leftSide h2 {
+    color: #E45E31;
   }
 
   .servicesListSection .container .leftSide ul {
     display: flex;
     flex-direction: column;
+  }
+
+  .engineering .container .leftSide ul {
     gap: 2.15vw;
+  }
+
+  .management .container .leftSide ul {
+    gap: 0.76vw;
+  }
+
+  .construction .container .leftSide ul {
+    gap: 1.18vw;
   }
 
   .servicesListSection .container .leftSide ul li {
@@ -582,6 +620,14 @@
     height: 1.53vw;
   }
 
+  .management .container .leftSide ul li img {
+    filter: invert(60%) sepia(85%) saturate(369%) hue-rotate(196deg) brightness(99%) contrast(88%);
+  }
+
+  .construction .container .leftSide ul li img {
+    filter: invert(52%) sepia(67%) saturate(3524%) hue-rotate(342deg) brightness(93%) contrast(91%);
+  }
+
   .container .leftSide ul li p {
     font-family: "Inika";
     font-weight: 400;
@@ -590,7 +636,6 @@
   }
 
   .servicesListSection .container .rightSide {
-    width: 71.27vw;
     height: 100%;
     overflow: hidden;
     margin-right: -9.03vw;
@@ -608,9 +653,20 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #4C3B0DA3;
     z-index: 1;
     pointer-events: none;
+  }
+
+  .engineering .container .overlay {
+    background-color: transparent;
+  }
+
+  .management .container .overlay {
+    background-color: #13141894;
+  }
+
+  .construction .container .overlay {
+    background-color: #21252E7A;
   }
 
   .otherServicesSection {
@@ -633,6 +689,8 @@
   }
 
   .otherServicesSection .container .cardHolder {
+    max-width: 19.44vw;
     transform: translateY(0);
+    box-sizing: border-box;
   }
 }
