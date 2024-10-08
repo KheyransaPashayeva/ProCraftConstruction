@@ -720,4 +720,154 @@
     transform: translateY(0);
     box-sizing: border-box;
   }
+
+  .footerSection {
+    position: relative;
+    width: 100%;
+    background-color: #168679;
+    color: #FFFFFF;
+    margin: 8.2vw -9.03vw 0 -9.03vw;
+    padding: 1.94vw 9.03vw 1.39vw 9.03vw;
+  }
+
+  .footerSection .topSide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 1.94vw;
+  }
+
+  .footerSection .topSide .leftSide {
+    display: flex;
+    flex-direction: row;
+    gap: 3.13vw;
+  }
+
+  .footerSection .topSide .leftSide .firstColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.11vw;
+  }
+
+  .footerSection .topSide .leftSide .firstColumn div a,
+  .footerSection .topSide .leftSide .secondColumn div a {
+    text-decoration: none;
+    font-family: "Inika";
+    font-weight: 700;
+    font-size: 1.11vw;
+    color: #FFFFFF;
+  }
+
+  .footerSection .topSide .leftSide .secondColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 1.11vw;
+  }
+
+  .footerSection .topSide .leftSide .secondColumn .subServices {
+    display: flex;
+    flex-direction: row;
+    gap: 0.76vw;
+  }
+
+  .topSide .leftSide .secondColumn .subServices .leftSide,
+  .topSide .leftSide .secondColumn .subServices .rightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 1.11vw;
+  }
+
+  .secondColumn .subServices .leftSide div a,
+  .secondColumn .subServices .rightSide div a {
+    text-decoration: none;
+    font-family: "Inika";
+    font-weight: 400 !important;
+    font-size: 0.83vw !important;
+    color: #FFFFFF;
+  }
+
+  .footerSection .topSide .rightSide {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 6.67vw;
+  }
+
+  .footerSection .topSide .rightSide .followUsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 0.69vw;
+  }
+
+  .footerSection .topSide .rightSide .followUsSection .title,
+  .footerSection .topSide .rightSide .callUsSection .title {
+    font-family: "Inika";
+    font-weight: 700;
+    font-size: 1.11vw;
+    color: #FFFFFF;
+    padding-left: 0.14vw;
+  }
+
+  .footerSection .topSide .rightSide .followUsSection .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.69vw;
+  }
+
+  .topSide .rightSide .followUsSection .icons a {
+    position: relative;
+    min-width: 2.22vw;
+    height: 2.22vw;
+    text-decoration: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+  }
+
+  .rightSide .followUsSection .icons a img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.39vw;
+    height: 1.39vw;
+  }
+
+  .footerSection .topSide .rightSide .callUsSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1.29vw;
+    margin-bottom: 0.28vw;
+  }
+
+  .topSide .rightSide .callUsSection .phoneContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.32vw;
+  }
+
+  .topSide .rightSide .callUsSection .phoneContainer img {
+    width: 1.14vw;
+    height: 1.14vw;
+  }
+
+  .rightSide .callUsSection div span a {
+    text-decoration: none;
+    font-family: "Inika";
+    font-weight: 700;
+    font-size: 1.11vw;
+    color: #FFFFFF;
+    padding-right: 0.28vw;
+  }
+
+  .footerSection .bottomSide {
+    position: relative;
+    width: fit-content;
+    font-family: "Inika";
+    font-weight: 600;
+    font-size: 0.83vw;
+    color: #FFFFFF;
+    margin-top: 0.35vw;
+  }
 }
