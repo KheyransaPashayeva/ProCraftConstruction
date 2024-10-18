@@ -328,7 +328,7 @@
     gap: 1.39vw;
     background-color: #FFFFFF;
     padding-top: 4.17vw;
-    padding-bottom: 11.2vw;
+    padding-bottom: 8.2vw;
   }
 
   .constructionSection h2 {
@@ -869,5 +869,158 @@
     font-size: 0.83vw;
     color: #FFFFFF;
     margin-top: 0.35vw;
+  }
+
+  .portfolioGridSection {
+    position: relative;
+    margin-bottom: 2.78vw;
+  }
+
+  .portfolioGridSection .portfolioGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.39vw;
+    margin-bottom: 1.39vw;
+  }
+
+  .portfolioGridSection .portfolioGrid .imageCard {
+    box-sizing: border-box;
+    border-radius: 0.56vw;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .portfolioGridSection .portfolioGrid .imageCard a img {
+    width: 100%;
+    height: auto;
+  }
+
+  .portfolioGridSection .moreProjects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .portfolioGridSection .moreProjects a {
+    width: fit-content;
+    text-decoration: none;
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.39vw;
+    color: #2A93C0;
+  }
+
+  .reviewsSection {
+    position: relative;
+    background-color: #FAFAFA;
+    margin: 0 -9.03vw 13.69vw -9.03vw;
+    padding: 2.36vw 9.03vw;
+  }
+
+  .reviewsSection .title {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 2.08vw;
+    color: #131418;
+    margin-bottom: 1.39vw;
+  }
+
+  .reviewsSection .reviewsContainer {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .reviewsSection .reviewsContainer .singleReview {
+    min-width: 100%;
+    transition: transform 1s ease;
+    box-sizing: border-box;
+  }
+
+  .reviewsSection .reviewsContainer .reviewAnimationFadeOut {
+    animation: fadeOut 0.8s ease-out 0.1s forwards;
+  }
+
+  .reviewsSection .reviewsContainer .reviewAnimationFadeIn {
+    animation: fadeIn 1.2s ease-in;
+  }
+
+  .reviewsSection .reviewsContainer .singleReview .text {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.11vw;
+    color: #131418;
+    margin-bottom: 2.08vw;
+  }
+
+  .reviewsSection .reviewsContainer .singleReview .bottomContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reviewsSection .directionButton {
+    position: absolute;
+    bottom: 3.54vw;
+    width: 2.36vw;
+    height: 2.36vw;
+    background-color: #FAFAFA;
+    cursor: pointer;
+  }
+
+  .reviewsSection .left {
+    left: 9.03vw;
+  }
+
+  .reviewsSection .right {
+    right: 9.03vw;
+  }
+
+  .reviewsSection .directionButton img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .reviewsSection .reviewsContainer .singleReview .bottomContainer .customerContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1.39vw;
+    align-items: center;
+  }
+
+  .reviewsContainer .singleReview .bottomContainer .customerContainer .leftSide {
+    position: relative;
+    width: 4.72vw;
+    height: 4.72vw;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .singleReview .bottomContainer .customerContainer .leftSide img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .reviewsContainer .singleReview .bottomContainer .customerContainer .rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0.47vw;
+  }
+
+  .singleReview .bottomContainer .customerContainer .rightSide .customerName {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.11vw;
+    color: #000000;
+  }
+
+  .singleReview .bottomContainer .customerContainer .rightSide .customerAddress {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 0.97vw;
+    color: #767676;
   }
 }
