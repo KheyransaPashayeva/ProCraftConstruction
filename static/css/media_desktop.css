@@ -184,7 +184,7 @@
 
   .moreButton {
     width: fit-content;
-    border: 1px solid #229F90 !important;
+    border: 0.07vw solid #229F90 !important;
     background-color: #FFFFFF !important;
     color: #229F90 !important;
     opacity: 0;
@@ -247,7 +247,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.56vw;
-    border: 1px solid #E7E6E6;
+    border: 0.07vw solid #E7E6E6;
     border-radius: 1.11vw;
     background-color: #FFFFFF;
     transform: translateY(4vw);
@@ -734,7 +734,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 1px solid #FFFFFF;
+    border-bottom: 0.07vw solid #FFFFFF;
     padding-bottom: 1.94vw;
   }
 
@@ -820,7 +820,7 @@
     min-width: 2.22vw;
     height: 2.22vw;
     text-decoration: none;
-    border: 1px solid #FFFFFF;
+    border: 0.07vw solid #FFFFFF;
     border-radius: 50%;
   }
 
@@ -1022,5 +1022,199 @@
     font-weight: 400;
     font-size: 0.97vw;
     color: #767676;
+  }
+
+  .contactSection {
+    position: relative;
+    top: 1.2vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3.47vw;
+    margin-bottom: 15vw;
+  }
+
+  .contactSection .topSide {
+    display: flex;
+    flex-direction: row;
+    gap: 1.39vw;
+  }
+
+  .contactSection .topSide .leftSide {
+    width: 47.22vw;
+  }
+
+  .contactSection .topSide .leftSide .title {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 2.78vw;
+    color: #131418;
+    margin-bottom: 1.39vw;
+  }
+
+  .contactSection .topSide .leftSide .text {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.11vw;
+    color: #131418;
+  }
+
+  .contactSection .topSide .leftSide .contactDetails {
+    display: flex;
+    flex-direction: row;
+    gap: 1.39vw;
+    margin-top: 2.78vw;
+  }
+
+  .contactSection .topSide .leftSide .contactDetails .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.49vw;
+    width: 12.5vw;
+  }
+
+  .topSide .leftSide .contactDetails .container p {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.04vw;
+    color: #131418;
+  }
+
+  .topSide .leftSide .contactDetails .container .bold {
+    font-weight: 700 !important;
+  }
+
+  .contactSection .topSide .rightSide {
+    position: relative;
+    width: 33.33vw;
+    border: 0.07vw solid #E7E6E6;
+    border-radius: 1.11vw;
+    box-shadow: 0vw 0.14vw 0.91vw 0.21vw #CBCBCB52;
+  }
+
+  .contactSection .topSide .rightSide .contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1.39vw;
+    padding: 2.78vw 1.39vw 1.25vw 1.39vw;
+  }
+
+  .contactSection .topSide .rightSide .contactForm input {
+    width: 100%;
+    height: 2.78vw;
+    border: 0.07vw solid #EAE9E9;
+    border-radius: 0.83vw;
+    text-indent: 0.69vw;
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 0.97vw;
+    outline: none;
+  }
+
+  .topSide .rightSide .contactForm input::placeholder {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 0.97vw;
+    color: #ADADAD;
+  }
+
+  .contactSection .topSide .rightSide .contactForm textarea {
+    height: 12.43vw;
+    border: 0.07vw solid #EAE9E9;
+    border-radius: 0.83vw;
+    resize: none;
+    overflow: auto;
+    padding: 0.69vw;
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 0.97vw;
+    outline: none;
+  }
+
+  .topSide .rightSide .contactForm textarea::placeholder {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 0.97vw;
+    color: #ADADAD;
+  }
+
+  .contactSection .topSide .rightSide .contactForm .inputSubmit {
+    width: 100%;
+    height: 3.47vw;
+    background-color: #229F90;
+    color: #FFFFFF;
+    font-family: "Inika";
+    font-weight: 500;
+    font-size: 1.11vw;
+    cursor: pointer;
+  }
+
+  .contactSection .bottomSide {
+    position: relative;
+  }
+
+  .contactSection .bottomSide h2 {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 2.08vw;
+    color: #131418;
+    margin-bottom: 1.74vw;
+  }
+
+  .contactSection .bottomSide .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1.39vw;
+    align-items: stretch;
+    min-height: 14.72vw;
+  }
+
+  .contactSection .bottomSide .cards .singleCard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.07vw solid #E7E6E6;
+    border-radius: 1.11vw;
+    box-shadow: 0vw 0.14vw 0.91vw 0.21vw #CBCBCB52;
+  }
+
+  .contactSection .bottomSide .cards .singleCard .topSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 16.67vw;
+    border-bottom: 0.14vw solid #DFE5E8;
+    padding-bottom: 1.25vw;
+    margin-bottom: 1.04vw;
+  }
+
+  .bottomSide .cards .singleCard .topSide .iconHolder {
+    position: relative;
+    width: 2.78vw;
+    height: 2.78vw;
+  }
+
+  .cards .singleCard .topSide .iconHolder img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+  }
+
+  .bottomSide .cards .singleCard .topSide p {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.39vw;
+    color: #154259;
+  }
+
+  .bottomSide .cards .singleCard .bottomSide p {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.25vw;
+    color: #666669;
   }
 }
