@@ -1217,4 +1217,183 @@
     font-size: 1.25vw;
     color: #666669;
   }
+
+  .servicesInfoHolder .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.56vw;
+    margin-bottom: 0.69vw;
+  }
+
+  .servicesInfoHolder .container .iconHolder {
+    position: relative;
+    width: 2.08vw;
+    height: 2.08vw;
+  }
+
+  .servicesInfoHolder .container h1 {
+    margin-bottom: 0 !important;
+  }
+
+  .servicesInfoHolder .container .iconHolder .backButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .singleWorkSection {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 1.39vw;
+    padding-bottom: 2.92vw;
+  }
+
+  .singleWorkSection .leftSide {
+    width: 52.87vw;
+    height: 37.87vw;
+    border-radius: 0.8vw;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .singleWorkSection .leftSide .mainPicture {
+    width: 100%;
+    height: 100%;
+  }
+
+  .singleWorkSection .rightSide {
+    width: 26.39vw;
+  }
+
+  .singleWorkSection .rightSide .topSide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.39vw;
+    border-bottom: 0.07vw solid #DFE5E8;
+    padding-bottom: 1.42vw;
+  }
+
+  .singleWorkSection .rightSide .topSide .imageContainer {
+    position: relative;
+    width: 12.5vw;
+    height: 8.82vw;
+    border-radius: 0.56vw;
+    overflow: hidden;
+  }
+
+  .singleWorkSection .rightSide .topSide .imageContainer img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .singleWorkSection .rightSide .topSide .imageContainer .morePicturesLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF80;
+    color: #FFFFFF;
+    font-family: "Inika";
+    font-weight: 700;
+    font-size: 2.08vw;
+    cursor: pointer;
+  }
+
+  .singleWorkSection .rightSide .bottomSide {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.25vw;
+    padding-top: 0.72vw;
+  }
+
+  .singleWorkSection .rightSide .bottomSide .textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.28vw;
+    min-width: 12.5vw;
+  }
+
+  .singleWorkSection .rightSide .bottomSide .textContainer .bold {
+    font-weight: 700 !important;
+    color: #5C5D60 !important;
+  }
+
+  .singleWorkSection .rightSide .bottomSide .textContainer p {
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 0.97vw;
+    color: #666669;
+  }
+
+  .otherProjectsSection {
+    position: relative;
+    margin-top: -12.5vw;
+    margin-bottom: 13.89vw;
+  }
+
+  .otherProjectsSection .title {
+    text-align: center;
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.39vw;
+    color: #2A93C0;
+    margin-bottom: 1.39vw;
+  }
+
+  .otherProjectsSection .container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.39vw;
+    overflow-x: scroll;
+    scrollbar-color: rgba(16, 41, 70, 0.3) transparent;
+    scrollbar-width: thin;
+  }
+
+  .otherProjectsSection .container::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  .otherProjectsSection .container::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0.42vw;
+    height: 0.42vw;
+  }
+
+  .otherProjectsSection .container::-webkit-scrollbar-thumb {
+    background-color: rgba(16, 41, 70, 0.3);
+    border-radius: 0.42vw;
+  }
+
+  .otherProjectsSection .container .imageContainer {
+    position: relative;
+    width: 26.09vw;
+    min-width: 26.09vw;
+    height: 18.06vw;
+    border-radius: 0.56vw;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 0.5vw;
+  }
+
+  .otherProjectsSection .container .imageContainer .projectLink img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+  }
 }
