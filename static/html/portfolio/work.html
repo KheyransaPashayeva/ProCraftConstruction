@@ -35,28 +35,41 @@
   </section>
   <section class="singleWorkSection">
     <div class="leftSide">
-      <img class="mainPicture" src="./../../assets/img/work_1.jpg" alt="picture_1">
+      <img class="mainPicture clickable" src="./../../assets/img/work_1.jpg" alt="picture_1">
     </div>
     <div class="rightSide">
       <div class="topSide">
         <div class="imageContainer">
-          <img src="./../../assets/img/work_2.jpg" alt="picture_2">
+          <img src="./../../assets/img/work_2.jpg" alt="picture_2" class="clickable">
         </div>
         <div class="imageContainer">
-          <img src="./../../assets/img/work_1.jpg" alt="picture_3">
+          <img src="./../../assets/img/work_1.jpg" alt="picture_3" class="clickable">
         </div>
         <div class="imageContainer">
-          <img src="./../../assets/img/work_3.jpg" alt="picture_4">
+          <img src="./../../assets/img/work_3.jpg" alt="picture_4" class="clickable">
         </div>
         <div class="imageContainer">
-          <img src="./../../assets/img/work_4.jpg" alt="picture_5">
+          <img src="./../../assets/img/work_4.jpg" alt="picture_5" class="clickable">
         </div>
         <div class="imageContainer">
-          <img src="./../../assets/img/work_5.jpg" alt="picture_6">
+          <img src="./../../assets/img/work_5.jpg" alt="picture_6" class="clickable">
         </div>
         <div class="imageContainer">
-          <img src="./../../assets/img/work_6.jpg" alt="picture_7">
+          <img src="./../../assets/img/work_6.jpg" alt="picture_7" class="clickable">
           <div class="morePicturesLayer">+ 6</div>
+        </div>
+        <div id="carouselModal" class="carousel-modal">
+          <span class="close">
+            <img src="./../../assets/svg/close.svg" alt="close">
+          </span>
+          <img class="carousel-image" id="carouselImg">
+          <div class="prev">
+            <img src="./../../assets/svg/left.svg" alt="prev">
+          </div>
+          <div class="next">
+            <img src="./../../assets/svg/right.svg" alt="next">
+          </div>
+          <div id="carouselIndicators" class="indicators"></div>
         </div>
       </div>
       <div class="bottomSide">
@@ -248,5 +261,6 @@
   </section>
 
   <script src="./../../js/reviewsCarousel.js"></script>
+  <script src="./../../js/fullscreenPicture.js"></script>
 </body>
 </html>
