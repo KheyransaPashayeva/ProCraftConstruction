@@ -1024,6 +1024,21 @@
     color: #767676;
   }
 
+  .singleReview .bottomContainer .customerContainer .rightSide .customerFeedback {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.59vw;
+    width: fit-content;
+  }
+
+  .bottomContainer .customerContainer .rightSide .customerFeedback img {
+    position: relative;
+    width: 1.32vw;
+    height: 1.32vw;
+  }
+
   .contactSection {
     position: relative;
     top: 1.2vw;
