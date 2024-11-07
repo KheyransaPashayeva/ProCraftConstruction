@@ -1496,4 +1496,83 @@
     width: 100%;
     height: 100%;
   }
+
+  .aboutSection {
+    position: relative;
+    margin-top: 8vw;
+  }
+
+  .aboutSection .imageContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: calc(13.89vw + 5vw);
+  }
+
+  .aboutSection .imageContainer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(182deg, #FFFEFE 6%, rgba(255, 254, 254, 0.6) 25%, rgba(255, 255, 255, 0) 44%);
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .aboutSection .imageContainer img {
+    position: relative;
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .aboutSection .textContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 26.39vw;
+    height: 12.57vw;
+    box-sizing: border-box;
+    z-index: 1;
+    padding: 1.39vw 2.78vw;
+  }
+
+  .aboutSection .bottomLeft {
+    left: 0;
+    bottom: -5vw;
+    background: linear-gradient(180deg, #95DCEF 0%, #C0EEFB 100%);
+  }
+
+  .aboutSection .topRight {
+    top: 0;
+    right: 0;
+    background: linear-gradient(180deg, #F2EB79 0%, #FAF9D6 100%);
+  }
+
+  .aboutSection .textContainer p {
+    font-family: "Inika";
+    font-weight: 400;
+    color: #000000;
+  }
+
+  .aboutSection .textContainer .text {
+    font-size: 1.11vw;
+  }
+
+  .aboutSection .textContainer .container {
+    display: inline-block;
+    width: auto;
+    margin-left: auto;
+  }
+
+  .aboutSection .textContainer .container .nameAndSurname {
+    font-size: 0.97vw;
+  }
+
+  .aboutSection .textContainer .container .jobPosition {
+    font-size: 0.83vw;
+  }
 }
