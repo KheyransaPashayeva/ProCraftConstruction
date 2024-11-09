@@ -21,6 +21,7 @@
     flex-direction: row;
     align-items: center;
     gap: 3.68vw;
+    height: 4.65vw;
     background-color: #11121961;
     margin: 0 -9.03vw;
     padding: 0 9.03vw;
@@ -56,6 +57,51 @@
     color: #696969;
   }
 
+  .linksHolder .container {
+    position: relative;
+  }
+
+  .linksHolder .container .servicesSubMenu {
+    position: absolute;
+    display: none;
+    top: 4.7vw;
+    left: -5.5vw;
+    background-color: #FFFFFF;
+    box-shadow: -0.07vw 0.14vw 0.49vw 0vw #D1D1D1;
+    opacity: 0;
+    z-index: 10;
+  }
+
+  .services {
+    display: flex;
+    align-items: center;
+    height: 4.65vw;
+    box-sizing: border-box;
+  }
+
+  .linksHolder .container .services:hover + .servicesSubMenu,
+  .servicesSubMenu:hover {
+    display: flex !important;
+    flex-direction: column;
+    animation: fadeIn 0.4s ease forwards;
+  }
+
+  .linksHolder .container .servicesSubMenu .sublink {
+    text-decoration: none;
+    font-family: "Inika";
+    font-weight: 400;
+    font-size: 1.11vw;
+    background-color: transparent;
+    color: #131419;
+    transition: background-color 0.2s ease, color 0.1s ease;
+    padding: 1.04vw 4.86vw;
+  }
+
+  .linksHolder .container .servicesSubMenu .sublink:hover {
+    background-color: #229F90;
+    color: #FFFFFF;
+  }
+
   .link {
     font-family: "Inika";
     font-weight: 400;
@@ -82,8 +128,13 @@
     border-radius: 1.11vw;
     background-color: #229F90;
     color: #FFFFFF;
+    transition: background-color 0.1s ease;
     cursor: pointer;
     padding: 1.04vw 3.89vw;
+  }
+
+  .button:hover {
+    background-color: #11685E;
   }
 
   .dashboardHolder {
@@ -187,10 +238,16 @@
     border: 0.07vw solid #229F90 !important;
     background-color: #FFFFFF !important;
     color: #229F90 !important;
+    transition: background-color 0.1s ease, color 0.1s ease;
     opacity: 0;
     animation: fadeIn 1.2s ease-in forwards;
     animation-delay: 0.7s;
     padding: 1.04vw 4.65vw !important;
+  }
+
+  .moreButton:hover {
+    background-color: #229F90 !important;
+    color: #FFFFFF !important;
   }
 
   .image {
@@ -310,15 +367,22 @@
     padding-bottom: 0.78vw !important;
   }
 
+  .provideServicesButton:hover {
+    background-color: #229F90 !important;
+    color: #FFFFFF !important;
+  }
+
   .provideServicesButton img {
     width: 1.39vw;
     height: 1.39vw;
     transition: transform 0.6s;
     transform-style: preserve-3d;
+    border-radius: 50%;
   }
 
   .provideServicesButton:hover img {
     transform: rotateX(360deg);
+    background-color: #FFFFFF !important;
   }
 
   .constructionSection {
@@ -1132,6 +1196,10 @@
     color: #ADADAD;
   }
 
+  .topSide .rightSide .contactForm input:hover::placeholder {
+    color: #A1A1A3;
+  }
+
   .contactSection .topSide .rightSide .contactForm textarea {
     height: 12.43vw;
     border: 0.07vw solid #EAE9E9;
@@ -1152,15 +1220,24 @@
     color: #ADADAD;
   }
 
+  .topSide .rightSide .contactForm textarea:hover::placeholder {
+    color: #A1A1A3;
+  }
+
   .contactSection .topSide .rightSide .contactForm .inputSubmit {
     width: 100%;
     height: 3.47vw;
     background-color: #229F90;
     color: #FFFFFF;
+    transition: background-color 0.1s ease;
     font-family: "Inika";
     font-weight: 500;
     font-size: 1.11vw;
     cursor: pointer;
+  }
+
+  .contactSection .topSide .rightSide .contactForm .inputSubmit:hover {
+    background-color: #11685E;
   }
 
   .contactSection .bottomSide {
